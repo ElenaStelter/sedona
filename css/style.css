@@ -1,4 +1,4 @@
-﻿html,
+html,
 body {
 	margin: 0;
 	padding: 0;
@@ -11,9 +11,13 @@ body {
 	width: 100%;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 .container {
-	width: 1200px;
-	padding: 0;
+	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: 0 25px 15px 5px rgba(0, 0, 0, 0.2);
@@ -146,8 +150,8 @@ a.current {
 }
 
 .attractions-block__description {
-	width: 400px;
-	height: 147px;
+	width: 33.33333333333333%;
+	height: 256px;
 	padding-top: 50px;
 	padding-bottom: 59px;
 	background-color: #81b3d2;
@@ -156,7 +160,7 @@ a.current {
 }
 
 .attractions-block__slider{
-	width: 800px;
+	width: 66.66666666666667;
 	height: 256px;
 }
 
@@ -191,7 +195,7 @@ a.current {
 
 .attractions-block .attractions-block__description,
 .advantages-block__item {
-	width: 400px;
+	width: 33.33333333333333%;
 	float: left;
 	text-align: center;
 }
@@ -291,7 +295,7 @@ button:focus{
 	top: 250px;
 	left: 4px;
 	background-color: #ffffff;
-	width: 458px;
+	width: 568px;
 	padding: 55px;
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 14px;
@@ -317,8 +321,8 @@ button:focus{
 
 .form-block__group input{
 	float: right;
-	width: 293px;	
-	padding: 8px 13px;
+	width: 347px;	
+	padding: 19px 13px;
 	padding-right: 40px;
 	background-color: #f2f2f2;
 	border: none;
@@ -358,7 +362,7 @@ button:focus{
 }
 
 input[type="number"]{
-	width: 38px;
+	width: 114px;
 	padding: 8px 38px;
 	text-align: center;
 	font-weight: bold;
