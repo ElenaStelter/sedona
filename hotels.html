@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Hotels Sedona</title>
+  </head>
+  <body>
+    <header class="header-block">
+		<div class="container clearfix">
+			<nav>
+				<ul class="nav-block">
+					<li><a href="#" >Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li class="logo"><a href="index.html"><img src="images/svg/logo-header.svg" alt="Лого" width="137"></a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="#" class="current">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container clearfix">
+		<div class="filter-block">
+			<form action="" method="post">
+				<div class="filter-block__infrastructure">
+					<div class="filter-block__title">
+						Инфраструктура:
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="pool" value="1" id="infrastructure-1" checked>
+						<label for="infrastructure-1">Бассейн</label>
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="parking" value="2" id="infrastructure-2">
+						<label for="infrastructure-2">Парковка</label>
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="wifi" value="3" id="infrastructure-3">
+						<label for="infrastructure-3">Wi-Fi</label>
+					</div>
+				</div>	
+				<div class="filter-block__housing">
+					<div class="filter-block__title">
+						Тип жилья:
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="hotel" value="1" id="housing-1" checked>
+						<label for="housing-1">Гостиница</label>
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="motel" value="2" id="housing-2">
+						<label for="housing-2">Мотель</label>
+					</div>
+					<div class="filter-block__group">
+						<input type="checkbox" name="apartments" value="3" id="housing-3">
+						<label for="housing-3">Апартаменты</label>
+					</div>
+				</div>	
+				<div class="filter-block__cost">
+					<div class="filter-block__title">
+						Стоимость в сутки (р):
+					</div>
+					<div class="filter-block__price">
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="filter-block__range">
+						<div class="scale">
+						  <div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button class="btn" type="submit">Показать</button>
+				</div>
+					
+					
+					<!--<label>Стоимость в сутки (р):</label>
+					<output name="from"></output>
+					<input type="range" min="0" max="3000">
+					
+					<output name="to"></output>
+					<input type="range" min="0" max="3000">
+					
+					<button class="btn" type="submit">Показать</button>-->
+			</form>
+			</div>
+			<div class="filter-block__content">
+				<div class="filter-block__total">
+					<h2>Найдено: 3</h2>
+				</div>
+				<div class="filter-block__sorting">
+					<div class="filter-block__sorting-type">
+						Сортировка:
+						<ul>
+							<li><a href="#" class="active">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По ретингу</a></li>
+						</ul>
+					</div>
+					<div class="filter-block__sorting-arrows">
+						<a href="#" class="up"></a>
+						<a href="#" class="down active"></a>
+					</div>
+				</div>
+				<div class="filter-block__result">
+					<div class="filter-block__item">
+						<div class="filter-block__img">
+							<img src="images/item-1.png" alt="">
+						</div>
+						<div class="filter-block__info">
+							<h2>Amara Resort & Spa</h2>
+							<table>
+								<tr>
+									<td>Гостиница</td>
+									<td>от 4000 р.</td>
+								</tr>
+							</table>
+							<a class="btn filter-block__detail" href="#">Подробнее</a>
+							<a class="btn filter-block__reserv" href="#">Забронировать</a>
+						</div>
+						<div class="filter-block__rating">
+							<span>Рейтинг: 8,5</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	</div>
+	</main>
+	
+	<footer class="footer-block">
+		<div class="container clearfix">
+				<div class="footer-block__inner-page">
+					<a class="btn" href="#">#visitSEDONA</a>
+					<div class="footer-sozial">
+						<a class="btn footer-sozial__tw" href="#"></a>
+						<a class="btn footer-sozial__fb" href="#"></a>
+						<a class="btn footer-sozial__yt" href="#"></a>
+					</div>
+					<div class="footer-copyright">
+						<p>WEBSITE by <a class="btn footer-copyright__logo" href="#"></a></p>					
+					</div>
+				</div>
+		</div>
+	</footer>
+  </body>
+</html>
